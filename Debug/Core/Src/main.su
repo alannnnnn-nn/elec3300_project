@@ -1,0 +1,8 @@
+../Core/Src/main.c:76:9:FindFirstWavFile	24	static
+../Core/Src/main.c:107:9:ParseWavHeader	128	static
+../Core/Src/main.c:122:6:DAC_Output_16bit	24	static
+../Core/Src/main.c:137:6:PlayWavFile	24	static
+../Core/Src/main.c:157:6:SD_WAV_Player_Main	80	static
+../Core/Src/main.c:204:5:main	8	static
+../Core/Src/main.c:251:6:SystemClock_Config	72	static
+../Core/Src/main.c:293:6:Error_Handler	4	static,ignoring_inline_asm
