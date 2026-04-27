@@ -1,11 +1,17 @@
-# Prerequisites
-*.d
+# 编译生成的文件夹
+Debug/
+Release/
 
-# Compiled Object files
-*.slo
-*.lo
+# 临时文件
 *.o
-*.obj
+*.d
+*.su
+*.list
+*.map
+
+# CubeIDE 自动生成的索引
+.settings/
+.pdm/
 
 # Precompiled Headers
 *.gch
