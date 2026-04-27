@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dac.h"
+#include "dma.h"
 #include "fatfs.h"
 #include "sdio.h"
 #include "tim.h"
@@ -133,7 +134,7 @@ void DAC_Output_16bit(int16_t pcm)
 /*
 void audio_delay_us(uint32_t us)
 {
-    us = us * 9;  // 72MHz æ ¡å‡†ç³»æ•°
+    us = us * 9;  // 72MHz ? ¡??†ç³»?•°
     while(us--);
 }
 */
@@ -229,8 +230,9 @@ int main(void)
   MX_FSMC_Init();
   MX_FATFS_Init();
   MX_DAC_Init();
-  MX_SDIO_SD_Init();
+  MX_DMA_Init();
   MX_TIM6_Init();
+  MX_SDIO_SD_Init();
   /* USER CODE BEGIN 2 */
   LCD_INIT();
   //SDCard_Check();
